@@ -20,3 +20,5 @@ export PATH
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="/home/ec/.sdkman"
 [[ -s "/home/ec/.sdkman/bin/sdkman-init.sh" ]] && source "/home/ec/.sdkman/bin/sdkman-init.sh"
+
+source /home/ec/.config/broot/launcher/bash/br

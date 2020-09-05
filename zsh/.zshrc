@@ -225,3 +225,5 @@ extract() {
 		shift
 	done
 }
+
+source /home/ec/.config/broot/launcher/bash/br
