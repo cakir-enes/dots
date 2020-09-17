@@ -22,4 +22,5 @@ export SDKMAN_DIR="/home/ec/.sdkman"
 [[ -s "/home/ec/.sdkman/bin/sdkman-init.sh" ]] && source "/home/ec/.sdkman/bin/sdkman-init.sh"
 
 setxkbmap -option caps:super
-source /home/ec/.config/broot/launcher/bash/br
+#source /home/ec/.config/broot/launcher/bash/br
+

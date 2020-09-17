@@ -9,4 +9,4 @@ fi
 
 export PATH="$HOME/.cargo/bin:$PATH"
 
-source /home/ec/.config/broot/launcher/bash/br
+#source /home/ec/.config/broot/launcher/bash/br
