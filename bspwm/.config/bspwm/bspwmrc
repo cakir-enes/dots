@@ -22,3 +22,9 @@ bspc rule -a Kupfer.py focus=on
 bspc rule -a Screenkey manage=off
 bspc rule -a quake state=floating
 bspc rule -a exp state=floating
+
+bspc rule -a dropdown sticky=on state=floating hidden=on
+bspc rule -a obsidian sticky=on state=floating hidden=on
+bspc rule -a explorer sticky=on state=floating hidden=on
+kitty --class dropdown &
+kitty --class explorer broot &

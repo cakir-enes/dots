@@ -1,5 +1,5 @@
 configuration {
-  modi: "run,drun,window";
+  modi: "windowcd,drun,window";
   width: 30;
   font: "Input Mono 11";
   terminal: "kitty";

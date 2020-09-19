@@ -26,22 +26,31 @@ super + Return
 # dropdowns
 #
 super + space
-    tdrop -ma -w 50% -x 25% -y 15% -s dropdown kitty --class quake
+    ~/scratch.sh dropdown
 
 super + shift + space
     tdrop -ma -w 50% -x 25% -y 15% firefox
 
 super + e
-	tdrop -ma -w 50% -x 25% -y 15% kitty --class exp -e broot -s
+	~/scratch.sh explorer
 
 
 # program launcher
 super + p
-	rofi -show run
+	rofi -show drun
 
 # window switcher
 super + slash
 	rofi -show window
+
+super + alt + space
+    ~/scratch.sh obsidian
+
+
+
+# current workspace window switcher
+super + shift + slash
+	rofi -show windowcd
 
 # make sxhkd reload its configuration files:
 super + Escape
