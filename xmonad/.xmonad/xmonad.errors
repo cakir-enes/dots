@@ -1,0 +1,14 @@
+
+xmonad.hs:256:16: warning: [-Wdeprecations]
+    In the use of ‘spacing’ (imported from XMonad.Layout.Spacing):
+    Deprecated: "Use spacingRaw instead."
+    |
+256 |      tiled   = spacing 4 $ Tall nmaster delta ratio
+    |                ^^^^^^^
+
+xmonad.hs:268:16: warning: [-Wdeprecations]
+    In the use of ‘smartSpacing’ (imported from XMonad.Layout.Spacing):
+    Deprecated: "Use spacingRaw instead."
+    |
+268 |      tabbed = (smartSpacing 3 $ mastered (3/100) (5/8) $ focusTracking simpleTabbed)
+    |                ^^^^^^^^^^^^

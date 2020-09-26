@@ -4,6 +4,7 @@ sxhkd &
 picom -b &
 ~/.config/polybar/launch.sh &
 nitrogen --restore &
+wmname LG3D
 
 bspc monitor -d I II III IV
 
