@@ -265,8 +265,8 @@ myStartupHook = do
 -- Run xmonad with the settings you specify. No need to modify this.
 --
 main = do 
-  xmproc0 <- spawnPipe "xmobar -x 0 /home/ec/.config/xmobar/xmobar.config"
-  xmproc1 <- spawnPipe "xmobar -x 1 /home/ec/.config/xmobar/xmobar.config"
+  xmproc0 <- spawnPipe "$HOME/.cabal/bin/xmobar -x 0 $HOME/.config/xmobar/xmobar.config"
+  xmproc1 <- spawnPipe "$HOME/.cabal/bin/xmobar -x 1 $HOME/.config/xmobar/xmobar.config"
   xmonad $ ewmh desktopConfig {
     manageHook = manageDocks <+> (namedScratchpadManageHook scratchpads) <+> manageHook desktopConfig
     , startupHook = myStartupHook

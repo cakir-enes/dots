@@ -226,4 +226,9 @@ extract() {
 	done
 }
 
-source /home/ec/.config/broot/launcher/bash/br
+#source /home/ec/.config/broot/launcher/bash/br
+
+#. $HOME/.asdf/asdf.sh
+
+#. $HOME/.asdf/completions/asdf.bash
+#export PATH=$PATH:~/go/bin
