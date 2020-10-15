@@ -22,13 +22,10 @@ set $menu dmenu_path | dmenu | xargs swaymsg exec --
 
 exec ulauncher
 exec $term --class "quake"
-exec $term --class "dummy"
 for_window [app_id="quake"] move scratchpad, resize set 800 610
-bindsym F1 exec swaymsg [app_id="quake"] scratchpad show
+bindsym $mod+return exec swaymsg [app_id="quake"] scratchpad show
 
-for_window [app_id="dummy"] move scratchpad, resize set 800 610
 for_window [app_id="ulauncher"] move position 50px, border none, floating enable
-bindsym F2 exec swaymsg [app_id="dummy"] scratchpad show
 
 exec /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 
@@ -79,8 +76,8 @@ input "type:keyboard" {
 # Basics:
 #
     # Start a terminal
-    bindsym $mod+Return exec $term
-    bindsym Ctrl+space exec ulauncher-toggle 
+    bindsym $mod+Shift+Return exec $term
+    bindsym $mod+p exec ulauncher-toggle 
     # Kill focused windowcc
     bindsym $mod+c kill
 
@@ -180,7 +177,7 @@ input "type:keyboard" {
     bindsym $mod+f fullscreen
 
     # Toggle the current focus between tiling and floating mode
-    bindsym $mod+Shift+space floating toggle
+    bindsym $mod+t floating toggle
 
     # Swap focus between the tiling area and the floating area
     bindsym $mod+space focus mode_toggle
@@ -229,11 +226,12 @@ bindsym $mod+r mode "resize"
 #
 # Read `man 5 sway-bar` for more information about this section.
 bar {
+    status_command i3status 
     position bottom
 
     # When the status_command prints a new line to stdout, swaybar updates.
     # The default just shows the current date and time.
-    status_command while date +'%Y-%m-%d %l:%M:%S %p'; do sleep 1; done
+    # status_command while date +'%Y-%m-%d %l:%M:%S %p'; do sleep 1; done
 
     colors {
         statusline #ffffff
